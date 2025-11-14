@@ -394,3 +394,8 @@ hr {
   text-align: center;
   margin: 0 auto;
 }
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%; !important
+}
