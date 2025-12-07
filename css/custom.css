@@ -282,6 +282,7 @@ footer nav, footer p {
   text-align: right;
 }
 
+
 /* Mobile Footer Adjustments */
 @media only screen and (max-width: 799px) {
   footer nav {
