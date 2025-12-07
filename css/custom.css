@@ -29,6 +29,12 @@ Experiment with colors, typography, spacing, and component styles.
    TYPOGRAPHY - CUSTOMIZE FONTS & TEXT STYLES
    ========================================================================== */
 
+ul {
+    opacity: 1;               /* Fully opaque */
+    color: #ffffff;              /* Solid black text */
+    background: none;         /* Remove gradient masks */
+}
+
 body {
   color: var(--primary-80);
   /* font-family is set in framework.css but you can override it here if needed */
