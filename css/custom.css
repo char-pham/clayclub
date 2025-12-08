@@ -25,14 +25,7 @@ Experiment with colors, typography, spacing, and component styles.
   --pink: #F8B7B3;
   --white: #fff;
 
-  @font-face {
-  font-family: 'Unageo';
-  src: url('') format('woff2'),
-       url('https://raw.githubusercontent.com/merethom/framework/main/fonts/PPPangramSans-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
+  
 
 }
 
@@ -47,11 +40,15 @@ ul {
     opacity: 1;               /* Fully opaque */
     color: #ffffff;              /* Solid black text */
     background: none;         /* Remove gradient masks */
+    font-size: 20px;
+    font-family: "Urbanist", sans-serif;
+    padding-left: 20px;
 }
+
 
 body {
   color: var(--primary-80);
-  font-family: "On", sans-serif;
+}
   /* font-family is set in framework.css but you can override it here if needed */
 
 }
@@ -61,22 +58,42 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: var(--primary-80);
   /* Add your custom heading styles here */
+  
+
+  .lexend-<uniquifier> 
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+  
 }
 
 h1 { 
   font-size: 90px;
-  background-color: var(--medium-blue)
+  background-color: var(--medium-blue);
+  font-weight: bolder;
+  
   /* Try adding: font-weight, color, text-transform, etc. */
+
 }
 
 h2 { 
-  font-size: 42px;
+  font-size: 48px;
+  font-family: "Lexend", sans-serif;
+  line-height: 110%;
+  letter-spacing: 0.15;
 }
 
 
 
 h3 { 
-  font-size: 30px;
+  font-size: 40px;
+  font-family: "Urbanist", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 110%;
+  letter-spacing: 0.15;
 }
 
 h4 { 
@@ -93,14 +110,21 @@ h6 {
 
 /* Paragraph Styles */
 p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--primary-80);
   /* Try adjusting: line-height, letter-spacing, margin-bottom */
+
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  color:#425B97
+
+
 }
 
 /*learn more button on homepage*/
 a {
+
+   font-family: "Urbanist", sans-serif;
+   font-size: 20px;
+   
   
 }
 
@@ -145,7 +169,7 @@ a:hover {
 /* Button Styles - Customize your call-to-action buttons */
 a.button {
   border-radius: 50px;
-  border: 2px solid var(--primary-80);
+  border: 2px solid var(--dark-yellow);
   padding: 10px 20px 8px;
   display: inline-block;
   margin-top: var(--spacing8x2);
@@ -266,6 +290,8 @@ header {
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
   box-sizing: border-box;
+
+  
 }
 
 section {
