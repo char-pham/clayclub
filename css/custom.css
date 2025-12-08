@@ -16,7 +16,6 @@ Experiment with colors, typography, spacing, and component styles.
   --primary-50: #9CB0C9;
   --primary-25: #CED7E4;
   --grey: #EBEFF4;
-  --white: #fff;
   
   /* You can add more custom colors here */
   --dark-blue: #425B97;
@@ -24,6 +23,15 @@ Experiment with colors, typography, spacing, and component styles.
   --dark-yellow:#FFD895;
   --light-yellow:#FDEB9F;
   --pink: #F8B7B3;
+  --white: #fff;
+
+  @font-face {
+  font-family: 'Unageo';
+  src: url('') format('woff2'),
+       url('https://raw.githubusercontent.com/merethom/framework/main/fonts/PPPangramSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 }
@@ -43,7 +51,9 @@ ul {
 
 body {
   color: var(--primary-80);
+  font-family: "On", sans-serif;
   /* font-family is set in framework.css but you can override it here if needed */
+
 }
 
 /* Heading Styles - Customize sizes, colors, spacing */
@@ -192,11 +202,12 @@ header nav a.active {
 }
 
 header {
+      margin: var(--spacing8x2) var(--spacing8x3);
     background: linear-gradient(#FFD794, #FDEFA2 );
     align-items: center;
 }
 
-
+  
 /* Hero section */
 #hero-image {
   background-color: var(--medium-blue);
@@ -257,6 +268,12 @@ header {
   box-sizing: border-box;
 }
 
+section {
+    margin: var(--spacing8x18) var(--spacing8x18);
+    margin-bottom: var(--spacing8x1);
+    margin-top: var(--spacing8x18);
+}
+
 /* dark background wrapper - extends to viewport edges */
 .dark-bg-wrapper {
   background: var(--pink);
@@ -265,6 +282,11 @@ header {
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
   box-sizing: border-box;
+}
+
+section {
+    margin: var(--spacing8x18) var(--spacing8x18);
+    
 }
 
 /* Callout */
