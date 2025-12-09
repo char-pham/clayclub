@@ -30,7 +30,9 @@ Experiment with colors, typography, spacing, and component styles.
 }
 
 
-
+.text-right {
+    text-align: right;
+}
 
 /* ==========================================================================
    TYPOGRAPHY - CUSTOMIZE FONTS & TEXT STYLES
@@ -72,7 +74,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 { 
   font-size: 90px;
   background-color: var(--medium-blue);
-  font-weight: bolder;
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+
+
   
   /* Try adding: font-weight, color, text-transform, etc. */
 
@@ -186,7 +191,7 @@ a.register-button {
   background-color:var(--dark-yellow);
 
 }
-]
+
 a.button:hover {
   background: var(--dark)
 }
@@ -212,7 +217,7 @@ a.button-highlight {
 
 /* Header styles */
 header img {
-  background: linear-gradient(#FFD794, #FDEFA2 );
+  
     top: 0;
     bottom: 0;
     width: 220px;
@@ -220,6 +225,7 @@ header img {
 }
 
 header nav {
+  
   top: 100%;
   text-align: right;
   font-size: 15px;
@@ -227,17 +233,20 @@ header nav {
 
 
 header nav a {
+ 
   margin-left: 40px;
   /* Try adding: text-transform, font-weight, padding for button-style nav */
 }
 
 header nav a.active {
+  
   border-bottom: 2px solid var(--primary-80);
   padding-bottom: 2px;
 }
 
 header {
-      margin: var(--spacing8x2) var(--spacing8x3);
+    padding:  var(--spacing8x2) var(--spacing8x3);
+    margin: 0;
     background: linear-gradient(#FFD794, #FDEFA2 );
     align-items: center;
 }
@@ -259,7 +268,6 @@ header {
 }
 
 #hero-image h1 {
-  background-color: (var(--medium-blue));
   text-align: center;
   color: var(--light-yellow);
   margin: 0; 
@@ -267,11 +275,17 @@ header {
   padding-bottom: var(--spacing200);
   padding-left: var(--spacing8x18);
   padding-right: var(--spacing8x18);
+  line-height: 110%;
+  letter-spacing: 0.15px;
 
 }
 
 #hero-image p {
   color: var(--white);
+  text-align: center;
+  line-height: 140%;
+  letter-spacing: -1px;
+
 }
 
 #hero-image a {
@@ -306,20 +320,7 @@ header {
 }
 
 
-.what-we-do {
-  background: var(--pink);
-}
-
-
-
-section {
-    margin: var(--spacing8x18) var(--spacing8x18);
-    margin-bottom: var(--spacing8x1);
-    margin-top: var(--spacing8x18);
-    
-}
-
-/* dark background wrapper - extends to viewport edges */
+/* nextworkshop styles */
 .next-workshop {
   background: var(--pink);
   width: 100vw;
@@ -340,6 +341,7 @@ section {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x18);
   box-sizing: border-box;
 }
 
@@ -351,6 +353,68 @@ section {
     margin: var(--spacing8x18) var(--spacing8x18);
     
 }
+
+.what-we-do {
+  background: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+}
+
+.what-we-do h2 {
+  color: var(--dark-yellow);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.what-we-do p {
+  color: var(--white);
+
+}
+
+.highlight-text {
+  font-weight: bold;
+}
+
+.our-mission {
+  background: linear-gradient(#FFD794, #FDEFA2 );
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+  
+}
+
+.our-values {
+  background: linear-gradient(#FFD794, #FDEFA2 );
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+
+}
+
+section {
+    margin: var(--spacing8x18) var(--spacing8x18);
+    margin-bottom: var(--spacing8x1);
+    margin-top: var(--spacing8x18);
+    
+}
+
+.meet-the-team {
+  background: #F8B7B3;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+}
+
 
 /* Callout */
 
@@ -490,7 +554,20 @@ hr {
     height: 33vh;
   }
 
- 
+
+#hero-image {
+  padding: 24px;
+  height: auto;
+}
+
+.next-workshop section{
+  margin: 40px 24px;
+
+}
+
+.next-event section {
+  margin: 40px 24px;
+
 }
 
 /* Tablet-specific customizations */
