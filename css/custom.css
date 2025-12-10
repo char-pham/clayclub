@@ -34,6 +34,7 @@ Experiment with colors, typography, spacing, and component styles.
     text-align: right;
 }
 
+
 /* ==========================================================================
    TYPOGRAPHY - CUSTOMIZE FONTS & TEXT STYLES
    ========================================================================== */
@@ -53,21 +54,13 @@ body {
 }
   /* font-family is set in framework.css but you can override it here if needed */
 
-}
+
 
 /* Heading Styles - Customize sizes, colors, spacing */
 h1, h2, h3, h4, h5, h6 { 
   line-height: 1.1;
   color: var(--primary-80);
   /* Add your custom heading styles here */
-  
-
-  .lexend-<uniquifier> 
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-
   
 }
 
@@ -139,10 +132,6 @@ picture + p {
 }
 
 
-
-section div+div {
-  margin-top: var(--spacing8x1);
-}
 
 
 /* Mobile Typography Adjustments */
@@ -416,8 +405,202 @@ section {
 }
 
 
-/* Callout */
+.monthly-calender {
+  background: linear-gradient(#FFD794, #FDEFA2 );
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x18);
+  box-sizing: border-box;
+}
+.monthly-calender img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
+.student-work-gallery {
+  background: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x18);
+  box-sizing: border-box;
+}
+
+.student-work-gallery h2 {
+  color: var(--dark-yellow);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.student-work-gallery p {
+  color: var(--white);
+
+}
+
+.student-work-gallery h4 {
+  color: var(--dark-yellow);
+
+}
+
+
+.why-join {
+  background: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+}
+
+.why-join h2 {
+  color: var(--light-yellow);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.why-join p {
+  color: var(--white);
+  font-family: "Urbanist", sans-serif;
+
+}
+
+.why-join .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--spacing8x5);
+}
+
+.how-to-join h3 {
+  font-size: 25px;
+}
+/* Quote Section */
+
+.student-testimonials {
+  background: linear-gradient(#FFD794, #FDEFA2 );
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x18);
+  box-sizing: border-box;
+}
+
+
+.quote-section blockquote p {
+    font-size: 30px;
+    font-family: "Urbanist", sans-serif;
+    font-style: italic;
+    color: var(--dark-blue);
+    margin-bottom: var(--spacing8x2);
+    line-height: 1.4;
+}
+
+
+.quote-section blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+
+.quote-section cite {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 25px;
+  color: var(--medium-blue);
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+.how-to-join {
+  background: var(--pink);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x18);
+  box-sizing: border-box;
+}
+
+
+.how-to-join a.button {
+  border: 2px solid var(--dark-blue);
+  color: var(--dark-blue);
+  background-color: var(--dark-yellow);
+}
+
+
+/* Style for social media cards */
+.mobi1.tab2.desk3 {
+  background: linear-gradient(#FFD794, #FDEFA2 );
+  border-radius: 16px;
+  padding: var(--spacing8x3);
+  box-sizing: border-box;
+}
+
+
+a.follow-button {
+    border-radius: 50px;
+    border: 2px solid var(--dark-blue);
+    padding: 10px 20px 8px;
+    display: inline-block;
+    margin-top: var(--spacing8x2);
+    color: var(--dark-blue);
+    background-color: var(--pink);
+}
+
+/* Reduce spacing between socials heading and social-links cards */
+.social-links {
+  margin-top: -150px;
+  margin-bottom: 0;
+  background-color: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x18);
+  box-sizing: border-box;
+}
+
+.socials {
+  background-color: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+/* Make contact group photo fill entire section */
+#contact-groupphoto {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: var(--medium-blue);
+}
+
+#contact-groupphoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0;
+}
+
+/* Callout */
 .callout {
   background: var(--pink);
 }
@@ -432,9 +615,6 @@ section {
   height: 100%;
   min-height: 300px;
 }
-
-
-
 
 
 
@@ -541,7 +721,44 @@ hr {
 /* Mobile-specific customizations */
 @media only screen and (max-width: 799px) {
   /* Add mobile-specific styling here */
-  
+
+
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#FFD794, #FDEFA2 );
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s 
+ease;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: var(--spacing8x12);
+}
+
+#mobile-nav-toggle:checked ~ .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+    background-color: var(--dark-blue);
+}
+
+#mobile-nav-toggle:checked ~ .hamburger-menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+    background-color: var(--dark-blue);
+}
+
+.mobile-nav nav a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: lexend, sans-serif;
+    display: block;
+    border-bottom: 1.5px solid var(--dark-blue);
+    padding: 20px 0;
+}
+
   /* Example: Larger touch targets for mobile */
   a.button {
     padding: 18px 24px 14px;
@@ -570,6 +787,59 @@ hr {
 
 }
 
+.what-we-do section {
+  margin: 40px 24px;
+}
+
+.our-mission section {
+  margin: 40px 24px;
+}
+
+.our-values section {
+  margin: 40px 24px;
+}
+
+.meet-the-team section {
+  margin: 40px 24px;
+}
+
+.monthly-calender section {
+  margin: 40px 24px;
+}
+
+* Make monthly calendar image fill its container and be responsive */
+.monthly-calender img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.monthly-calender picture {
+  width: 100%;
+  display: block;
+}
+
+.student-work-gallery section {
+  margin: 40px 24px;
+}
+
+.why-join section {
+  margin: 40px 24px;
+}
+
+.how-to-join section {
+  margin: 40px 24px;
+}
+
+.student-testimonials section {
+  margin: 40px 24px;
+}
+
+
+
+  
+  }
 /* Tablet-specific customizations */
 @media only screen and (min-width: 800px) and (max-width: 1279px) {
   /* Add tablet-specific styling here */
@@ -580,26 +850,7 @@ hr {
   /* Add desktop-specific styling here */
 }
 
-/* Quote Section */
-.quote-section blockquote {
-  margin: 0;
-  padding: 0;
-}
 
-.quote-section blockquote p {
-  font-size: 24px;
-  font-style: italic;
-  color: var(--white);
-  margin-bottom: var(--spacing8x2);
-  line-height: 1.4;
-}
-
-.quote-section cite {
-  font-size: 16px;
-  color: var(--primary-25);
-  font-style: normal;
-  font-weight: 500;
-}
 
 
 /* Homepage specific styles */
@@ -612,5 +863,5 @@ hr {
 
 iframe {
   aspect-ratio: 16 / 9;
-  width: 100%; !important
+  width: 100%; 
 }
