@@ -95,11 +95,15 @@ h3 {
 }
 
 h4 { 
-  font-size: 24px;
+  font-size: 30px;
+  color: var(--dark-blue);
+  font-family: "Urbanist", sans-serif;
+  font-style: italic;
 }
 
 h5 { 
   font-size: 20px;
+  color: var(--dark-blue);
 }
 
 h6 { 
@@ -112,7 +116,7 @@ p {
 
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
-  color:#425B97
+  color: var(--dark-blue);
 
 
 }
@@ -273,13 +277,13 @@ header {
   color: var(--white);
   text-align: center;
   line-height: 140%;
-  letter-spacing: -1px;
 
 }
 
 #hero-image a {
   color: var(--white);
   margin-bottom: var(--spacing200);
+  font-style: italic;
 }
 
 #hero-image span i {
@@ -321,6 +325,11 @@ header {
 
 .next-workshop h2 {
   color: var(--white);
+  font-size: 60px;
+}
+
+.next-workshop h3 {
+  color: var(--dark-blue);
 }
 
 
@@ -336,6 +345,11 @@ header {
 
 .next-event h2 {
   color: var(--white);
+  font-size: 60px;
+}
+
+.next-event h3 {
+  color: var(--dark-blue);
 }
 
 section {
@@ -343,24 +357,65 @@ section {
     
 }
 
+/* Style for what-we-do-details cards */
+.what-we-do-details .mobi1.tab2.desk2 {
+  background: linear-gradient(#FFD794, #FDEFA2);
+  border-radius: 16px;
+  padding: var(--spacing8x3); /* Increased from spacing8x3 */
+  box-sizing: border-box;
+  margin-bottom: var(--spacing8x3);
+}
+
+
 .what-we-do {
   background: var(--medium-blue);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x1);
+  margin-bottom: 0;
   box-sizing: border-box;
 }
 
+.what-we-do-details {
+  background-color: var(--medium-blue);
+  width: 100vw;
+  margin-top: -150px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-top: var(--spacing8x1);
+  padding-bottom: var(--spacing8x3);
+  box-sizing: border-box;
+}
+
+
 .what-we-do h2 {
-  color: var(--dark-yellow);
+  color: var(--light-yellow);
   font-family: "Lexend", sans-serif;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 64px;
 }
 
 .what-we-do p {
   color: var(--white);
+  font-style: italic;
+
+}
+
+.what-we-do-details h4 {
+  color: var(--dark-blue);
+
+}
+
+.what-we-do-details p {
+  color: var(--medium-blue);
+
+}
+
+.what-we-do-details h5 {
+  color: var(--dark-blue);
 
 }
 
@@ -378,6 +433,17 @@ section {
   
 }
 
+.our-mission h2 {
+  color: var(--dark-blue);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.our-mission p {
+  color: var(--medium-blue);
+}
+
 .our-values {
   background: linear-gradient(#FFD794, #FDEFA2 );
   width: 100vw;
@@ -386,6 +452,17 @@ section {
   padding: var(--spacing8x3) calc(50vw - 50%);
   box-sizing: border-box;
 
+}
+
+.our-values h2 {
+  color: var(--dark-blue);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.our-values p {
+  color: var(--medium-blue);
 }
 
 section {
@@ -401,12 +478,20 @@ section {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: var(--spacing8x18);
   box-sizing: border-box;
+}
+
+.meet-the-team h2 {
+  color: var(--dark-blue);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 
 .monthly-calender {
-  background: linear-gradient(#FFD794, #FDEFA2 );
+  background: var(--medium-blue);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -419,6 +504,22 @@ section {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.monthly-calender h2 {
+  color: var(--light-yellow);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.monthly-calender p {
+  color: var(--white);
+}
+
+.monthly-calender h3 {
+  color: var(--white);
+  font-size: 40px;
 }
 
 .student-work-gallery {
@@ -435,7 +536,7 @@ section {
   color: var(--dark-yellow);
   font-family: "Lexend", sans-serif;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 60px;
 }
 
 .student-work-gallery p {
@@ -462,7 +563,7 @@ section {
   color: var(--light-yellow);
   font-family: "Lexend", sans-serif;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 60px;
 }
 
 .why-join p {
