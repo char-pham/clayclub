@@ -374,6 +374,7 @@ section {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-top: var(--spacing8x1);
   padding-bottom: var(--spacing8x1);
   margin-bottom: 0;
   box-sizing: border-box;
@@ -501,7 +502,6 @@ section {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
-  padding-bottom: var(--spacing8x18);
   box-sizing: border-box;
 }
 .monthly-calender img {
@@ -527,8 +527,38 @@ section {
   font-size: 40px;
 }
 
-.student-work-gallery {
-  background: var(--medium-blue);
+#college {
+    background: var(--medium-blue);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: var(--spacing8x3) calc(50vw - 50%);
+    box-sizing: border-box;
+}
+
+#college img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: var(--spacing8x3) auto;
+    padding-left: var(--spacing8x3);
+    padding-right: var(--spacing8x3);
+    box-sizing: border-box;
+}
+
+
+.section {
+    margin: var(--spacing8x3) var(--spacing8x13);
+    background: var(--medium-blue);
+}
+
+.social-links {
+  margin-top: -150px;
+  margin-bottom: 0;
+  background-color: var(--medium-blue);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -537,21 +567,58 @@ section {
   box-sizing: border-box;
 }
 
-.student-work-gallery h2 {
+.socials {
+  background-color: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+
+.student-work-gallery-intro {
+  margin-bottom: 0;
+  background-color: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: var(--spacing8x3) calc(50vw - 50%);
+  box-sizing: border-box;
+}
+
+.student-work-gallery {
+  margin-top: -150px;
+  background: var(--medium-blue);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-bottom: var(--spacing8x18);
+  padding: var(--spacing8x3);
+  box-sizing: border-box;
+}
+
+.student-work-gallery-intro h2 {
   color: var(--dark-yellow);
   font-family: "Lexend", sans-serif;
   font-weight: bold;
   font-size: 60px;
 }
 
-.student-work-gallery p {
+.student-work-gallery-intro p {
   color: var(--white);
 
 }
 
 .student-work-gallery h4 {
   color: var(--dark-yellow);
-  font
+
+}
+
+.student-work-gallery p {
+  color: var(--white);
 
 }
 
@@ -696,7 +763,7 @@ a.follow-button {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
-  padding-bottom: 0;
+  padding-bottom: var(--spacing8x17);
   margin-bottom: 0;
   box-sizing: border-box;
 }
@@ -882,6 +949,19 @@ ease;
     background-color: var(--dark-blue);
 }
 
+.hamburger-menu span {
+    display: block;
+    position: absolute;
+    height: var(--spacing4x1);
+    width: 100%;
+    background-color: var(--dark-blue);
+    border-radius: var(spacing4x1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
 .mobile-nav nav a {
     color: var(--dark-blue);
     text-decoration: none;
@@ -910,10 +990,53 @@ ease;
   height: auto;
 }
 
+#hero-image h1 {
+  font-size: 48px;
+  padding: 0;
+}
+
+#hero-image p {
+  font-size: 18px;
+}
+
 .next-workshop section{
   margin: 40px 24px;
 
 }
+
+.next-workshop h2 {
+  font-size: 48px;
+}
+
+.next-workshop h3 {
+  font-size: 24px;
+} 
+
+.next-workshop p {
+  font-size: 18px;
+}
+
+.next-workshop ul {
+  font-size: 18px;
+}
+
+.next-event h2 {
+  font-size: 48px;
+} 
+
+.next-event h3 {
+  font-size: 24px;
+}
+
+.next-event p {
+  font-size: 18px;
+} 
+
+.next-event ul {
+  font-size: 18px;
+}
+
+
 
 .next-event section {
   margin: 40px 24px;
@@ -928,17 +1051,78 @@ ease;
   margin: 70px 24px;
 }
 
+.what-we-do h2 {
+  font-size: 48px;
+}
+
+.what-we-do p {
+  font-size: 18px;
+}
+
+.what-we-do-details h4 {
+  font-size: 24px;
+}
+.what-we-do-details p {
+  font-size: 18px;
+}
+.what-we-do-details h5 {
+  font-size: 20px;
+}
+
 .our-mission section {
   margin: 40px 24px;
+}
+
+.our-mission h2 {
+  font-size: 48px;
+}
+
+.our-mission p {
+  font-size: 18px;
 }
 
 .our-values section {
   margin: 40px 24px;
 }
 
+.our-values h2 {
+  font-size: 48px;
+  text-align: left;
+}
+.our-values p {
+  font-size: 18px;
+  text-align:left
+}
+
+.our-values h5 {
+  font-size: 18px;
+  text-align:left
+}
+
 .meet-the-team section {
   margin: 40px 24px;
 }
+
+.meet-the-team h2 {
+  font-size: 48px;
+}
+
+.meet-the-team p {
+  font-size: 18px;
+}
+
+.meet-the-team img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: var(--spacing8x3) auto;
+    padding-left: var(--spacing8x3);
+    padding-right: var(--spacing8x3);
+    box-sizing: border-box;
+}
+
+
 
 .monthly-calender section {
   margin: 40px 24px;
@@ -957,7 +1141,51 @@ ease;
   display: block;
 }
 
+.monthly-calender h2 {
+  font-size: 48px;
+}
+
+
+.college section {
+  margin: 40px 24px;
+}
+
 .student-work-gallery section {
+  margin: 40px 24px;
+}
+
+.student-work-gallery h4 {
+  font-size: 24px;
+}
+
+.student-work-gallery p {
+  font-size: 18px;
+}
+
+.student-work-gallery-intro h2 {
+  font-size: 48px;
+}
+
+.student-work-gallery-intro p {
+  font-size: 18px;
+}
+
+.
+
+
+
+
+.social-links section {
+  margin: 40px 24px;
+  margin-top: 100px;
+}
+
+.socials section {
+  margin: 40px 24px;
+ 
+} 
+
+.student-work-gallery-intro section {
   margin: 40px 24px;
 }
 
@@ -965,14 +1193,41 @@ ease;
   margin: 40px 24px;
 }
 
+.why-join h2 {
+  font-size: 48px;
+}
+
+.why-join p {
+  font-size: 18px;
+} 
+
 .how-to-join section {
   margin: 40px 24px;
+}
+
+.how-to-join h2 {
+  font-size: 48px;
+}
+
+.how-to-join p {
+  font-size: 18px;
 }
 
 .student-testimonials section {
   margin: 40px 24px;
 }
 
+.student-testimonials h2 {
+  font-size: 48px;
+}
+
+.student-testimonials p {
+  font-size: 18px;  
+}
+
+.student-testimonials cite {
+  font-size: 18px;
+}
 
 
   
