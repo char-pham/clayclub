@@ -24,6 +24,7 @@ Experiment with colors, typography, spacing, and component styles.
   --light-yellow:#FDEB9F;
   --pink: #F8B7B3;
   --white: #fff;
+  ---background: linear-gradient(#FFD794, #FDEFA2 );
 
   
 
@@ -167,7 +168,8 @@ a:hover {
 /* Button Styles - Customize your call-to-action buttons */
 a.button {
   border-radius: 50px;
-  border: 2px solid var(--dark-yellow);
+  border: 2px solid var(--dark-blue);
+  background: linear-gradient(#FFD794, #FDEFA2 );
   padding: 10px 20px 8px;
   display: inline-block;
   margin-top: var(--spacing8x2);
@@ -339,7 +341,6 @@ header {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
-  padding-bottom: var(--spacing8x18);
   box-sizing: border-box;
 }
 
@@ -489,6 +490,10 @@ section {
   font-size: 60px;
 }
 
+.meet-the-team p {
+  color: var(--medium-blue);
+}
+
 
 .monthly-calender {
   background: var(--medium-blue);
@@ -546,6 +551,7 @@ section {
 
 .student-work-gallery h4 {
   color: var(--dark-yellow);
+  font
 
 }
 
@@ -636,6 +642,21 @@ section {
   background-color: var(--dark-yellow);
 }
 
+.how-to-join h2 {
+  color: var(--white);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.how-to-join p {
+  color: var(--dark-blue);
+}
+
+.how-to-join h3 {
+  color: var(--dark-blue);
+}
+
 
 /* Style for social media cards */
 .mobi1.tab2.desk3 {
@@ -678,6 +699,17 @@ a.follow-button {
   padding-bottom: 0;
   margin-bottom: 0;
   box-sizing: border-box;
+}
+
+.socials h2 {
+  color: var(--light-yellow);
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.socials p {
+  color: var(--white);
 }
 
 /* Make contact group photo fill entire section */
@@ -888,8 +920,12 @@ ease;
 
 }
 
-.what-we-do section {
+.what-we-do-details section {
   margin: 40px 24px;
+}
+
+.what-we-do section {
+  margin: 70px 24px;
 }
 
 .our-mission section {
