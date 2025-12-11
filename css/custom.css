@@ -800,6 +800,26 @@ a.follow-button {
   margin-bottom: 0;
 }
 
+#student-testimonials-photo {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: var(--pink);
+}
+
+#student-testimonials-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+}
+
 /* Callout */
 .callout {
   background: var(--pink);
