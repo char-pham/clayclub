@@ -375,7 +375,7 @@ section {
   margin-right: calc(-50vw + 50%);
   padding: var(--spacing8x3) calc(50vw - 50%);
   padding-top: var(--spacing8x1);
-  padding-bottom: var(--spacing8x1);
+  padding-bottom: var(--spacing8x3);
   margin-bottom: 0;
   box-sizing: border-box;
 }
@@ -402,8 +402,12 @@ section {
 
 .what-we-do p {
   color: var(--white);
-  font-style: italic;
+  font-style: normal;
 
+}
+
+.what-we-do p:last-of-type {
+  font-style: italic;
 }
 
 .what-we-do-details h4 {
@@ -792,6 +796,8 @@ a.follow-button {
   background-color: var(--medium-blue);
 }
 
+
+
 #contact-groupphoto img {
   width: 100%;
   height: 100%;
@@ -1069,6 +1075,7 @@ ease;
 
 .what-we-do section {
   margin: 70px 24px;
+    padding-bottom: var(--spacing8x3);
 }
 
 .what-we-do h2 {
